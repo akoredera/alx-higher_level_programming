@@ -4,7 +4,7 @@ for i in range(97, 123):
     k = i + j
     if k % 2 != 0:
         value = k - 32
-    else: 
+    else:
         value = k
     print("{}".format(chr(value)), end="")
     j -= 2
