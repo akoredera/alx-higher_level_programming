@@ -10,8 +10,8 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
     else:
-        val1 = sys.argv[1]
-        val2 = sys.argv[3]
+        val1 = int(sys.argv[1])
+        val2 = int(sys.argv[3])
         if sys.argv[2] == '+':
             print(f"{val1} + {val2} = {add(val1, val2)}")
             sys.exit(0)
