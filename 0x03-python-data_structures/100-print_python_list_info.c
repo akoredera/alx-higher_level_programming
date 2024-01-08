@@ -1,5 +1,5 @@
 #define PY_SSIZE_T_CLEAN
-#include <Python.h>
+#include <python3.8/Python.h>
 /**
  * print_python_list_info - print python list info
  * @p: list
@@ -16,6 +16,6 @@ void print_python_list_info(PyObject *p)
 	{
 		PyObject *item = PyList_GetItem(p, i);
 
-		printf("Element %zd: %s\n", i, PyTYPE(item)->tp_name);
+		printf("Element %zd: %s\n", i, Py_TYPE(item)->tp_name);
 	}
 }
