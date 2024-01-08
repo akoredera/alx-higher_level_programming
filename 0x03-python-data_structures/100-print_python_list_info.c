@@ -1,5 +1,5 @@
 #define PY_SSIZE_T_CLEAN
-#include <python3.8/Python.h>
+#include <Python.h>
 /**
  * print_python_list_info - print python list info
  * @p: list
@@ -9,9 +9,11 @@ void print_python_list_info(PyObject *p)
 {
 	Py_ssize_t len = PyList_Size(p);
 	Py_ssize_t i;
+	PyListObject *list_obj;
 
 	printf("[*] Size of the Python List = %zd\n", len);
-	printf("[*] Allocated = %zd\n", sizeof(p));
+	list_obj = (PyListObject *)p;
+	printf("[*] Allocated = %ld\n", list_obj->allocated);
 	for (i = 0; i < len; i++)
 	{
 		PyObject *item = PyList_GetItem(p, i);
