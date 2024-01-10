@@ -5,3 +5,5 @@ def best_score(a_dictionary):
     if a_dictionary:
         new_dic = sorted(a_dictionary)
         return new_dic[-1]
+    else:
+        return None
