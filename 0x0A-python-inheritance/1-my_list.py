@@ -5,8 +5,8 @@ contains the MyList class
 
 
 class MyList(list):
-    """a child that inherit from the parent list class"""
+    """Implements sorted printing for the built-in list class."""
     def print_sorted(self):
-        '''method print sorted list'''
+        """Print a list in sorted ascending order."""
         result = sorted(self)
         print(result)
