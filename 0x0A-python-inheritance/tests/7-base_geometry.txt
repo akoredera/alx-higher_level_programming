@@ -52,3 +52,8 @@ Checking for error
     ...
     TypeError: boolean must be an integer
 
+Checking for error
+    >>> bg.integer_validator("speed", 10^-4)
+    Traceback (most recent call last):
+    ...
+    ValueError: speed must be greater than 0
