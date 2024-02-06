@@ -2,7 +2,6 @@
 '''
 Student to JSON
 '''
-import json
 
 
 class Student:
