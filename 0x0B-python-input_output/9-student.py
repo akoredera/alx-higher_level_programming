@@ -3,7 +3,9 @@
 Student to JSON
 '''
 import json
-
+'''
+import json file
+'''
 
 class Student:
     '''class student that defines a student'''
@@ -17,3 +19,4 @@ class Student:
         '''method retrieves dictionary representation of a Student instance'''
         return {'first_name': self.first_name,
                 'last_name': self.last_name, 'age': self.age}
+        
