@@ -19,6 +19,7 @@ class Square(Rectangle):
     def __str__(self):
         '''str method to override'''
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+
     @property
     def size(self):
         '''public getter and setter method for size'''
@@ -38,7 +39,7 @@ class Square(Rectangle):
             for key, value in kwargs.items():
                 if key == 'id':
                     self.id = value
-                if key ==  'size':
+                if key == 'size':
                     self.width, self.height = value, value
                 if key == 'x':
                     self.x = value
@@ -55,7 +56,9 @@ class Square(Rectangle):
                 if i == 3:
                     self.y = args[i]
 
-
     def to_dictionary(self):
-        '''return the dictionary representation of a Rectangle'''
+        '''
+        return the dictionary
+        representation of a Rectangle
+        '''
         return dict(x=self.x, y=self.y, id=self.id, size=self.width)

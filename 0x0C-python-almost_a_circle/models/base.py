@@ -19,7 +19,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         '''
-        method return the JSON string 
+        method return the JSON string
         representation opf list_dictionaries
         '''
         if list_dictionaries is None:
@@ -41,11 +41,10 @@ class Base:
         else:
             return json.loads(json_string)
 
-
     @classmethod
     def save_to_file(cls, list_objs):
-        ''' 
-        method writes the JSON string 
+        '''
+        method writes the JSON string
         representation of list_objs to a file
         '''
         if list_objs is None:
@@ -62,7 +61,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         '''
-        method returns an instance with 
+        method returns an instance with
         all atributes already set
         '''
         if dictionary and dictionary != {}:
