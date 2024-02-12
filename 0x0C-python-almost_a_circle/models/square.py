@@ -23,7 +23,7 @@ class Square(Rectangle):
     @property
     def size(self):
         '''public getter and setter method for size'''
-        return (self.width, self.height)
+        return self.width
 
     @size.setter
     def size(self, size):
@@ -32,7 +32,7 @@ class Square(Rectangle):
         elif size < 0:
             raise ValueError("width must be >= 0")
         else:
-            width, height = size, size
+            self.width, self.height = size, size
 
     def update(self, *args, **kwargs):
         if len(args) == 0:
