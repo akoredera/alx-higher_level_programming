@@ -34,6 +34,7 @@ class Square(Rectangle):
             self.width, self.height = size, size
 
     def update(self, *args, **kwargs):
+        '''update keyword arguement and positional argument'''
         if len(args) == 0:
             for key, value in kwargs.items():
                 if key == 'id':
