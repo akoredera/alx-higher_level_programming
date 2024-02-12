@@ -94,7 +94,7 @@ class Rectangle(Base):
         c = self.y
         d = self.width
         e = self.height
-        return f"[Rectangle]({a}) {b}/{c} - {d}/{e}"
+        return f"[Rectangle] ({a}) {b}/{c} - {d}/{e}"
 
     def update(self, *args, **kwargs):
         '''
